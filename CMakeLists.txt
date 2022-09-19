@@ -6,16 +6,16 @@ set(CMAKE_CXX_COMPILER /usr/bin/g++)
 set(CMAKE_CXX_STANDARD 17)
 
 # Define project name and language
-project("CPP Template Repository" CXX)
+project("CPP Linear Algebra ToolBox" CXX)
 
 # Use CTest for unitary testing
 include(CTest)
 enable_testing()
 
 # define directories
-set(SRC      ${CMAKE_SOURCE_DIR}/src)
-set(TESTS    ${CMAKE_SOURCE_DIR}/tests)
-set(EXAMPLES ${CMAKE_SOURCE_DIR}/examples)
+set(SRC      ${PROJECT_SOURCE_DIR}/src)
+set(TESTS    ${PROJECT_SOURCE_DIR}/tests)
+set(EXAMPLES ${PROJECT_SOURCE_DIR}/examples)
 
 add_subdirectory(${SRC})
 add_subdirectory(${TESTS})
