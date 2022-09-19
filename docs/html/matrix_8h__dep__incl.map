@@ -1,0 +1,11 @@
+<map id="src/matrix.h" name="src/matrix.h">
+<area shape="rect" id="node1" title="Header file for Matrix class." alt="" coords="244,5,333,32"/>
+<area shape="rect" id="node2" href="$linalg_8h.html" title="Main Header file for Linear Algebra Library." alt="" coords="220,155,304,181"/>
+<area shape="rect" id="node4" href="$lower_triangular_matrix_8h.html" title=" " alt="" coords="29,80,207,107"/>
+<area shape="rect" id="node6" href="$matrix_8cpp.html" title="Implementation of the Matrix class." alt="" coords="283,80,385,107"/>
+<area shape="rect" id="node7" href="$square_matrix_8h.html" title=" " alt="" coords="410,80,538,107"/>
+<area shape="rect" id="node3" href="$linalg_8cpp.html" title=" " alt="" coords="213,229,311,256"/>
+<area shape="rect" id="node5" href="$lower_triangular_matrix_8cpp.html" title=" " alt="" coords="5,155,196,181"/>
+<area shape="rect" id="node8" href="$lsq_8h.html" title=" " alt="" coords="383,155,453,181"/>
+<area shape="rect" id="node9" href="$square_matrix_8cpp.html" title="Implementation of the SquareMatrix class." alt="" coords="477,155,620,181"/>
+</map>
