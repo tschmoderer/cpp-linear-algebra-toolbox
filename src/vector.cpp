@@ -7,7 +7,7 @@
 * @copyright Copyright (c) 2021
 */
 
-#include "vector.h"
+#include "../include/vector.h"
 
 /* CONSTRUCTORS */
 
@@ -23,8 +23,8 @@ Vector::Vector() {
 
 /**
 * @brief Construct a new Vector object.
-* Return a  Vector with dimension n filled with zeros.
-* @param n Dimension of the desired vector (must be greater or equal than 1)
+* Return a  Vector with dimension \f$n\f$ filled with zeros.
+* @param n Dimension of the desired vector (must be greater or equal than \f$1\f$)
 */
 Vector::Vector(uint16_t n) {
     assert(n > 0);
@@ -239,8 +239,8 @@ Vector operator*(const Vector & v, const double d) {
 
 /**
 * @brief Addition of two vector objects.
-* @param lhs A vector of dimension $n$,
-* @param rhs A vector of dimension $n$
+* @param lhs A vector of dimension \f$n\f$,
+* @param rhs A vector of dimension \f$n\f$
 * @warning lhs and rhs must be of the same dimension. 
 * @return Vector Sum of lhs and rhs.
 */
@@ -282,8 +282,8 @@ Vector operator+(const Vector & v, const double d) {
 
 /**
 * @brief Substract two vector objects.
-* @param lhs A vector of dimension $n$,
-* @param rhs A vector of dimension $n$
+* @param lhs A vector of dimension \f$n\f$,
+* @param rhs A vector of dimension \f$n\f$
 * @warning lhs and rhs must be of the same dimension. 
 * @return Vector Difference of lhs and rhs.
 */
@@ -358,9 +358,9 @@ std::ostream & operator<<(std::ostream & os, const Vector & v) {
 /**
 * @brief A general method to compute the norm of a Vector object. 
 * @param type Unisgned integer to decide the norm to choose:
-* type = 0 compute the L^{\infty} norm 
-* type >= 1 Compute the L^p norm 
-* @return double L^p norm of the Vector. 
+* type = 0 compute the \f$L^{\infty}\f$ norm 
+* type >= 1 Compute the \f$L^p\f$ norm 
+* @return double \f$L^p\f$ norm of the Vector. 
 */
 double Vector::norm(uint8_t type) {
     assert(type >= 0);
@@ -381,9 +381,9 @@ double Vector::norm(uint8_t type) {
 }
 
 /**
-* @brief Compute the L^1 norm of a Vector object.
+* @brief Compute the \f$L^1\f$ norm of a Vector object.
 * 
-* @return double L^1 norm of the Vector.
+* @return double \f$L^1\f$ norm of the Vector.
 */
 double Vector::norm1() {
     double res = 0.; 
@@ -407,10 +407,10 @@ double Vector::norm2() {
 }
 
 /**
-* @brief Compute the L^p norm of a Vector object. 
+* @brief Compute the \f$L^p\f$ norm of a Vector object. 
 * 
 * @param p Order of the norm 
-* @return double L^p norm of the Vector.
+* @return double \f$L^p\f$ norm of the Vector.
 */
 double Vector::normp(uint8_t p) {
     double res = 0.;
@@ -421,9 +421,9 @@ double Vector::normp(uint8_t p) {
 }
 
 /**
-* @brief Compute the L^{\infty} norm of a Vector object. 
+* @brief Compute the \f$L^{\infty}\f$ norm of a Vector object. 
 * 
-* @return double L^{\infty} norm of the Vector. 
+* @return double \f$L^{\infty}\f$ norm of the Vector. 
 */
 double Vector::normInf() {
     double res = abs(this->data[0]); 
@@ -457,11 +457,11 @@ std::vector<double> Vector::to_std_vector() {
 /* STATIC METHODS */
 
 /**
-* @brief Construct vector of the canonical basis of R^n
+* @brief Construct vector of the canonical basis of \f$\mathbb{R}^n\f$
 * 
 * @param n Dimension of the vector space (must be greater or equal than 1)
 * @param k Number of the basis vector (must be between 0 and n-1).
-* @return Vector k-th vector of the canonical basis of R^n.
+* @return Vector k-th vector of the canonical basis of \f$\mathbb{R}^n\f$.
 * @warning Indices are 0-based.
 */
 Vector Vector::basis(uint16_t n, uint16_t k) {
@@ -496,7 +496,7 @@ Vector Vector::ones(uint16_t n) {
 }
 
 /**
-* @brief Construct a Vector object of length $n$ filled with random values sampled from 0. to 1.
+* @brief Construct a Vector object of length \f$n\f$ filled with random values sampled from 0. to 1.
 * @param n Dimension of the vector (must be greater or equal than 1).
 * @return Vector A Vector object of size n filled with random values
 */
@@ -510,9 +510,9 @@ Vector Vector::rand(uint16_t n) {
 }
 
 /**
-* @brief Construct a Vector object of length $n$ filled with random values sampled from the Gaussian random number distribution: mean is 0. and standart deviation is 1.
+* @brief Construct a Vector object of length \f$n\f$ filled with random values sampled from the Gaussian random number distribution: mean is 0. and standart deviation is 1.
 * @param n Dimension of the vector (must be greater or equal than 1).
-* @return Vector A Vector object of size $n$ filled with random values picked following a $\mathcal{N}(0,1)$ law.
+* @return Vector A Vector object of size \f$n\f$ filled with random values picked following a \f$\mathcal{N}(0,1)\f$ law.
 */
 Vector Vector::randn(uint16_t n) {
     assert(n > 0);
@@ -525,11 +525,11 @@ Vector Vector::randn(uint16_t n) {
 }
 
 /**
-* @brief Construct a Vector object of length $n$ filled with random values sampled from a Gaussian random number distribution. 
+* @brief Construct a Vector object of length \f$n\f$ filled with random values sampled from a Gaussian random number distribution. 
 * @param n Dimension of the vector (must be greater or equal than 1).
 * @param m Mean of the Gaussian distribution.
 * @param s Standart deviation of the Gaussian distribution
-* @return Vector A Vector object of size $n$ filled with random values  picked following a $\mathcal{N}(m,s)$ law.
+* @return Vector A Vector object of size \f$n\f$ filled with random values  picked following a \f$\mathcal{N}(m,s)\f$ law.
 */
 Vector Vector::randn(uint16_t n, double m, double s) {
     assert(n > 0);
@@ -585,7 +585,7 @@ Vector pow2(const Vector & v) {
 /**
  * @brief Compute the product of the element of a vector
  * @param v a vector object
- * @return double product of the components of $v$
+ * @return double product of the components of \f$v\f$
  * @warning If v has zero length then we return 1
  */
 double prod(const Vector & v) {
@@ -630,7 +630,7 @@ Vector sqrt(const Vector & v) {
 /**
  * @brief Compute the sum of the element of a vector
  * @param v a vector object
- * @return double sum of the components of $v$
+ * @return double sum of the components of \f$v\f$
  * @warning If v has zero length then we return 0
  */
 double sum(const Vector & v) {

@@ -1,4 +1,4 @@
-#include "diagonalMatrix.h"
+#include "../include/diagonalMatrix.h"
 
 double tr(const DiagonalMatrix & D) {
     return sum(D);

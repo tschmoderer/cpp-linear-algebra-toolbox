@@ -7,12 +7,12 @@
 /**
 * @class LTMatrix 
 * @brief A class describing a Lower Triangular Matrix. 
-* Lower triangular matrix are Matrix of dimension $n\times n$ satisfying
-* $$
+* Lower triangular matrix are Matrix of dimension \f$n\times n\f$ satisfying
+* \f[
 * L_{ij} = \left\{\begin{array}{rl} 0&\textrm{if}\quad j> i \\ 0 &\textrm{otherwise} \end{array}\right.
-* $$
+* \f]
 * @todo check that calling operator L(i,j) calls the newt implementation of the at function. 
-* @todo Extend the definition to $n\times m$, with $n>m$, matrices.
+* @todo Extend the definition to \f$n\times m\f$, with \f$n>m\f$, matrices.
 */
 class LTMatrix : public Matrix {
     public: 

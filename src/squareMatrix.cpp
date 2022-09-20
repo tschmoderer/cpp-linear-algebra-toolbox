@@ -7,7 +7,7 @@
 * @copyright Copyright (c) 2021
 */
 
-#include "squareMatrix.h"
+#include "../include/squareMatrix.h"
 
 /* CONSTRUCTORS */
 

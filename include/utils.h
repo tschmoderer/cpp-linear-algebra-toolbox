@@ -10,12 +10,12 @@
 #include <random>
 
 /**
-* @brief Compute $n$-th triangular number $T_n$ defined by 
-* $$
+* @brief Compute \f$n\f$-th triangular number \f$T_n\f$ defined by 
+* \f[
 * T_n = \frac{n(n+1)}{2}.
-* $$
+* \f]
 * @param n A nonnegative integer
-* @return uint32_t $T_n$, $n$-th triangular number.
+* @return uint32_t \f$T_n\f$, \f$n\f$-th triangular number.
 */
 inline uint32_t triangular(uint16_t n) {return n*(n+1)/2;}
 

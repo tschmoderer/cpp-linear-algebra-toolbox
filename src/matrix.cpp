@@ -7,7 +7,7 @@
 * @copyright Copyright (c) 2021
 */
 
-#include "matrix.h"
+#include "../include/matrix.h"
 
 /* CONSTRUCTORS */
 
@@ -441,7 +441,7 @@ Vector Matrix::col(uint16_t c) const {
 
 /**
 * @brief Compute the norm-1 of a Matrix object. 
-* For a Matrix M of dimension $n\times m$, its norm-1 is given by the maximum colum sum (in absolute value)
+* For a Matrix M of dimension \f$n\times m\f$, its norm-1 is given by the maximum colum sum (in absolute value)
 * \f[
 * \|M\|_1 = \max_{1\leq j\leq m} \sum_{i=1}^n |M_{ij}|
 * \f]
@@ -464,10 +464,10 @@ double Matrix::norm1() const {
 
 /**
 * @brief Compute the norm-Infinity of a Matrix object. 
-* For a Matrix M of dimension $n\times m$, its norm-Infinity is given by the maximum row sum (in absolute value)
-* $$
+* For a Matrix M of dimension \f$n\times m\f$, its norm-Infinity is given by the maximum row sum (in absolute value)
+* \f[
 * \|M\|_{\infty} = \max_{1\leq i\leq n} \sum_{j=1}^m |M_{ij}|
-* $$
+* \f]
 * @return double Norm-Infinity of Matrix object 
 */
 double Matrix::normInf() const {
@@ -487,10 +487,10 @@ double Matrix::normInf() const {
 
 /**
 * @brief Compute the Frobenius norm of a Matrix object. 
-* For a Matrix M of dimension $n\times m$, its Frobenius norm is given by the sum of its coefficient squared
-* $$
+* For a Matrix M of dimension \f$n\times m\f$, its Frobenius norm is given by the sum of its coefficient squared
+* \f[
 * \|M\|_{F} = \sum_{i=1}^n \sum_{j=1}^m M_{ij}^2
-* $$
+* \f]
 * @return double Frobenius norm of Matrix object 
 */
 double Matrix::normFrob() const {
@@ -564,7 +564,7 @@ Matrix Matrix::rand(uint16_t m, uint16_t n) {
 * @brief Construct an Hilbert matrix.
 * @param m Number of rows of the Matrix (must be greater or equal than 1).
 * @param n Number of cols of the Matrix (must be greater or equal than 1).
-* @return Matrix A Matrix object whose coefficients are $M_{ij} = \frac{1}{i+j-1}$ 
+* @return Matrix A Matrix object whose coefficients are \f$M_{ij} = \frac{1}{i+j-1}\f$ 
 */
 Matrix Matrix::hilbert(uint16_t m, uint16_t n) {
     assert(m > 0); assert(n > 0); 
@@ -582,7 +582,7 @@ Matrix Matrix::hilbert(uint16_t m, uint16_t n) {
 * See https://en.wikipedia.org/wiki/Vandermonde_matrix
 * @param v Vector of data sampled
 * @param n Power order of the vandermonde matrix
-* @return Matrix A Matrix object of dimension v.dim x n whose coefficients are $M_{ij}=v_i^{j-1}$ 
+* @return Matrix A Matrix object of dimension v.dim x n whose coefficients are \f$M_{ij}=v_i^{j-1}\f$ 
 */
 Matrix Matrix::vandermonde(const Vector & v, uint16_t n) {
     assert(n > 0); 
@@ -597,9 +597,9 @@ Matrix Matrix::vandermonde(const Vector & v, uint16_t n) {
 
 /**
 * @brief Overload operator * between two vectors to compute their outer product
-* @param u Vector object of dimension $m$ (>0)
-* @param v Vector object of dimension $n$ (>0)
-* @return Matrix Matrix object M of dimension $m\times n$ equal to M = u*v^T, i.e. $M_{ij} = u_iv_j$.
+* @param u Vector object of dimension \f$m\f$ (>0)
+* @param v Vector object of dimension \f$n\f$ (>0)
+* @return Matrix Matrix object M of dimension \f$m\times n\f$ equal to M = u*v^T, i.e. \f$M_{ij} = u_iv_j\f$.
 */
 Matrix Matrix::outer(const Vector & u, const Vector & v) {
     Matrix A(u.get_dim(), v.get_dim()); 
@@ -613,10 +613,10 @@ Matrix Matrix::outer(const Vector & u, const Vector & v) {
 
 /**
 * @brief Compute the product of two matrices combined with their transposition 
-* @param A Matrix object of dimension $(m_A,n_A)$
+* @param A Matrix object of dimension \f$(m_A,n_A)\f$
 * @param TRANSA 
-* @param B Matrix object of dimension $(m_B,n_B)$
-* @param TRANB 
+* @param B Matrix object of dimension \f$(m_B,n_B)\f$
+* @param TRANSB 
 * @return Matrix 
 */
 Matrix Matrix::matmul(const Matrix & A, MATRIX_TRANSPOSE TRANSA, const Matrix & B, MATRIX_TRANSPOSE TRANSB) {

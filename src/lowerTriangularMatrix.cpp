@@ -1,4 +1,4 @@
-#include "lowerTriangularMatrix.h"
+#include "../include/lowerTriangularMatrix.h"
 
 /* CONSTRUCTORS */
 
@@ -12,7 +12,7 @@ LTMatrix::LTMatrix() : Matrix() {}
 * @brief Construct a new LTMatrix object.  Represent a basic square lower triangular matrix. 
 * Data are stored as follows:
 * data[0] = l_{11}, data[1,2] = [l_{21}, l_{22}], ...
-* @param n Dimension of the matrix (must be greater or equal than $1$). 
+* @param n Dimension of the matrix (must be greater or equal than \f$1\f$). 
 */
 LTMatrix::LTMatrix(uint16_t n) {
     assert(n > 0); 
@@ -26,8 +26,8 @@ LTMatrix::LTMatrix(uint16_t n) {
 /**
 * @brief Construct a new LTMatrix object. 
 * Represent a general rectangular lower triangular matrix.  
-* @param m Number of row of the matrix, must be greater or equal than $n$, 
-* @param n Number of colum of the matrix, must be greater or equal than $1$. 
+* @param m Number of row of the matrix, must be greater or equal than \f$n\f$, 
+* @param n Number of colum of the matrix, must be greater or equal than \f$1\f$. 
 */
 LTMatrix::LTMatrix(uint16_t m, uint16_t n) {
     assert(m > 0); assert(n > 0); 
@@ -35,8 +35,8 @@ LTMatrix::LTMatrix(uint16_t m, uint16_t n) {
     this->n_rows = m; 
     this->n_cols = n; 
     // Matrix is composed of two block on top of each other. 
-    // Above block is a square lower triangular matrix of dimension $n\times n$
-    // Bellow is a rectangular dense block with dimension $(m-n)\times n$. 
+    // Above block is a square lower triangular matrix of dimension \f$n\times n\f$
+    // Bellow is a rectangular dense block with dimension \f$(m-n)\times n\f$. 
     this->n_elements = triangular(n) + (m-n) * n; 
     this->data = new double[this->n_elements]; 
     this->default_data();
@@ -66,14 +66,14 @@ LTMatrix::~LTMatrix() {/*Call Matrix destructor*/}
 /* METHODS */
 
 /**
- * @brief A method to compute the maximum colum index with non-zero data for a given row $i$.
- * Works for a general rectangular lower triangular matrix $L$ of dimension $(m\times n)$ 
- * with $m\geq n$. With C++ indexing convention, the result is given by 
- * $$
+ * @brief A method to compute the maximum colum index with non-zero data for a given row \f$i\f$.
+ * Works for a general rectangular lower triangular matrix \f$L\f$ of dimension \f$(m\times n)\f$ 
+ * with \f$m\geq n\f$. With C++ indexing convention, the result is given by 
+ * \f[
  * j_{\max}(i)=\min(i, n-1),\quad\forall\,0\leq i< m
- * $$
- * @param i Row index, must be between $0$ and $m-1$.
- * @return uint16_t $j_{\max}(i) maximum index of a column with non-zeros data.
+ * \f]
+ * @param i Row index, must be between \f$0\f$ and \f$m-1\f$.
+ * @return uint16_t \f$j_{\max}(i)\f$ maximum index of a column with non-zeros data.
  */
 uint16_t LTMatrix::max_col_from_row(uint16_t i) const {
     assert(i >=0 ); assert(i < this->n_rows); 
@@ -117,12 +117,12 @@ LTMatrix LTMatrix::operator-() const {
 }
 
 /**
-* @brief Product of Lower Triangular Matrices. For $L_1$ and $L_2$ two lower triangular matrices of dimension $(n,n)$, we have
-* $$
+* @brief Product of Lower Triangular Matrices. For \f$L_1\f$ and \f$L_2\f$ two lower triangular matrices of dimension \f$(n,n)\f$, we have
+* \f[
 * (L_1L_2)_{i,j} = \sum_{k=j}^{i} (L_1)_{ik}(L_2)_{kj} ,\quad \forall\, j \leq i
-* $$
-* @param lhs Left hand side, a lower triangular matrix of size : $(n, n)$
-* @param rhs Right hand side, a lower triangular matrix of size : $(n, n)$
+* \f]
+* @param lhs Left hand side, a lower triangular matrix of size : \f$(n, n)\f$
+* @param rhs Right hand side, a lower triangular matrix of size : \f$(n, n)\f$
 * @return LTMatrix Product lhs and rhs stored as a new lower triangular matrix object
 * @warning lhs and rhs must be square (and thus of the same dimensions) lower triangular matrices in order for the product to make sense. 
 */
@@ -294,11 +294,11 @@ double & LTMatrix::at(uint32_t n) const {
 }
 
 /**
-* @brief Access given element of a matrix. If $L$ is a lower triangular matrix 
-* of dimension $m\times n$ with $m\geq n$, then $i$ can take values between $0$ and $m-1$ 
-* and $j$ can take values between $0$ and $j_{\max}(i)=\min(i,n-1)$.
+* @brief Access given element of a matrix. If \f$L\f$ is a lower triangular matrix 
+* of dimension \f$m\times n\f$ with \f$m\geq n\f$, then \f$i\f$ can take values between \f$0\f$ and \f$m-1\f$ 
+* and \f$j\f$ can take values between \f$0\f$ and \f$j_{\max}(i)=\min(i,n-1)\f$.
 * @param i Row number (must be greater or equal than 0)
-* @param j Column number (must be between 0 and $j_{\max}(i)$)
+* @param j Column number (must be between 0 and \f$j_{\max}(i)\f$)
 * @return double & Reference to the (i,j)-th element of the matrix
 * @warning Indices are 0-based
 */

@@ -1,4 +1,4 @@
-#include "diagonalMatrix.h"
+#include "../include/diagonalMatrix.h"
 #include "error_code.h"
 
 void test_contructors() {
