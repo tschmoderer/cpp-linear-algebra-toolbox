@@ -20,7 +20,12 @@ jobs:
         uses: actions/checkout@v2
         with: 
             submodules: "true"
-
+            
+      # Install dependencies
+      - name:  Dependencies
+        shell: bash
+        run:   sudo apt install -y doxygen 
+        
       # Configure doxygen file
       - name: Configure
         shell: bash
