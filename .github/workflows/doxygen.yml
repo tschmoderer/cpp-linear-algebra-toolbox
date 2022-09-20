@@ -37,7 +37,7 @@ jobs:
       # Run Doxygen
       - name: Generate Doxygen Documentation
         shell: bash
-        run: doxygen ./docs/doxyconfig.in
+        run: doxygen ./docs/doxyfile.in
         
       
         
