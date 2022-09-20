@@ -39,7 +39,7 @@ jobs:
         shell: bash
         run: doxygen ./docs/doxyfile.in
         
-    # Publish doc
-      - name: Push documentation
+      # Publish doc
+      - name: Push Documentation
         shell: bash
-        run: git status
+        run: ls -r ./docs && git status && git checkout gh-pages && git status
