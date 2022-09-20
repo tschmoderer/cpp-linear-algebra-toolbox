@@ -18,6 +18,12 @@ jobs:
     steps:
       - uses: actions/checkout@v2
       
+      # Install dependencies
+      - name: Dependencies
+        shell: bash
+        run: | 
+          sudo apt install -y doxygen
+      
       - name: Configure
         shell: bash
         run: |
