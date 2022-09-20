@@ -17,10 +17,18 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+      
+      - name: Configure
+        shell: bash
+        run: |
+          mkdir -p build
+          cd build
+          cmake .. 
+          
       - name: Doxygenize
         uses: langroodi/doxygenize@v1.6.3
         with: 
-          doxygenconf:   './docs/doxyfile.conf' # default is ./Doxyfile
-          htmloutput:    './docs/html/'         # default is ./docs/
-          ghpagesbranch: 'gh-pages'             # default is gh-pages
-          ghpagesdir:    './docs/html/'         # default is ./ 
+          doxygenconf:   './docs/doxyfile.in' # default is ./Doxyfile
+          htmloutput:    './docs/html/'       # default is ./docs/
+          ghpagesbranch: 'gh-pages'           # default is gh-pages
+          ghpagesdir:    './docs/html/'       # default is ./ 
