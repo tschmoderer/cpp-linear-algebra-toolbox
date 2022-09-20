@@ -48,4 +48,4 @@ jobs:
           git checkout -b gh-pages 
           git add -f ./docs/html/* 
           git commit -m "Auto commit  documentation" 
-          git push
+          git push origin gh-pages
