@@ -42,4 +42,4 @@ jobs:
        # Publish doc
       - name: Push Documentation
         shell: bash
-        run: git checkout -b gh-pages && git add -f ./docs/html/* && git commit -m "Auto commit  documentation" && git status
+        run: git config --global user.email "timothee.schmoderer@netcourrier.com" && git config --global user.name "tschmoderer" && git checkout -b gh-pages && git add -f ./docs/html/* && git commit -m "Auto commit  documentation" && git status
