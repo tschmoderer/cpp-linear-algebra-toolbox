@@ -39,7 +39,7 @@ jobs:
         shell: bash
         run: doxygen ./docs/doxyfile.in
         
-       # Publish doc          
+      # Publish doc          
       - name: GitHub Push Documentation
         shell: bash 
         run: |
@@ -48,4 +48,4 @@ jobs:
           git reset
           git add --force .docs/html/*
           git commit -m "Auto commit"
-   	      git push
+          git push
