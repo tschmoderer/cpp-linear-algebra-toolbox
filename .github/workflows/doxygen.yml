@@ -20,39 +20,13 @@ jobs:
         uses: actions/checkout@v2
         with: 
             submodules: "true"
-          
-      # Install dependencies
-      - name:  Dependencies
-        shell: bash
-        run:   sudo apt install -y doxygen git graphviz plantuml
-      
-      # Configure doxygen file
-      - name: Configure
-        shell: bash
-        run: |
-          mkdir -p build
-          cd build
-          cmake .. 
-      
-      # Run Doxygen
-      - name: Generate Doxygen Documentation
-        shell: bash
-        run: doxygen ./docs/doxyfile.in
+     
         
       # Publish doc          
-      - name: GitHub Push Documentation
-        shell: bash 
-        run: |
-          git config --global user.name github-actions[bot]
-          git config --global user.email github-actions[bot]@users.noreply.github.com          
-          git add --force ./docs/html
-          git stash save ./docs/html
-          git remote update
-          git checkout gh-pages
-          git rm -rf .docs/html
-          mkdir -p .docs/html
-          git stash pop         
-          git reset
-          git add --force ./docs/html/*
-          git commit -m "Auto commit"
-          git push
+      - name: Doxygenize
+        uses: langroodi/doxygenize@v1.6.1
+        with: 
+          doxygenconf: './docs/doxyfile.in' # default is ./Doxyfile
+          htmloutput: './docs/html/'          # default is ./docs/
+          ghpagesbranch: 'gh-pages'           # default is gh-pages
+          ghpagesdir: './docs/html/'          # default is ./ 
