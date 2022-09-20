@@ -15,8 +15,10 @@ add_test(test_matrix test_matrix)
 add_test(test_squarematrix test_squarematrix)
 add_test(test_diagonalmatrix test_diagonalmatrix)
 
+if (NOT TARGET memcheck)
 add_custom_target(memcheck
     COMMAND ${CMAKE_CTEST_COMMAND} 
         --force-new-ctest-process --test-action memcheck
     COMMAND cat "${CMAKE_BINARY_DIR}/Testing/Temporary/MemoryChecker.*.log"
     WORKING_DIRECTORY "${CMAKE_BINARY_DIR}")
+endif()
