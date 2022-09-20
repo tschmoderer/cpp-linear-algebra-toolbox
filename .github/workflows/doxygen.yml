@@ -42,4 +42,4 @@ jobs:
        # Publish doc
       - name: Push Documentation
         shell: bash
-        run: ls -R && git status && git checkout -b gh-pages && git add ./docs/html/* && git commit -m "Auto commit  documentation" && git status
+        run: git checkout -b gh-pages && git add -f ./docs/html/* && git commit -m "Auto commit  documentation" && git status
