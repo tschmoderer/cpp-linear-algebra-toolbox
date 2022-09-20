@@ -24,13 +24,15 @@ jobs:
         run: | 
           sudo apt install -y doxygen
       
+      # Configure doxygen file
       - name: Configure
         shell: bash
         run: |
           mkdir -p build
           cd build
           cmake .. 
-          
+      
+      # Run Doxygen
       - name: Doxygenize
         uses: langroodi/doxygenize@v1.6.3
         with: 
