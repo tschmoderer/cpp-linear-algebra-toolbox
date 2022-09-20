@@ -1,4 +1,4 @@
-name: 'Generate documentation with doxygen'
+name: 'docs'
 
 on:
   push:
