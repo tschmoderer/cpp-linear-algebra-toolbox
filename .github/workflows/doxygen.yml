@@ -39,12 +39,17 @@ jobs:
         shell: bash
         run: doxygen ./docs/doxyfile.in
         
+       # Publish doc
+      - name: Push Documentation 1
+        shell: bash
+        run: ls -R && git status
+        
       - name: Checkout Repository gh-pages branch
         uses: actions/checkout@v2
         with:
           ref: gh-pages
         
       # Publish doc
-      - name: Push Documentation
+      - name: Push Documentation 2
         shell: bash
         run: ls -R && git status
