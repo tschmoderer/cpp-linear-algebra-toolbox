@@ -12,17 +12,25 @@ on:
       - 'docs/doxyfile.conf'
   workflow_dispatch:
 
+inputs:
+    doxygenconf:
+        description: "Location of the doxygen configuration file"
+        required: true
+        default:  "./docs/doxyconfig.in"
+
 jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      
+      - name: Checkout Repository
+        uses: actions/checkout@v2
+        with: 
+            submodules: "true"
+          
       # Install dependencies
-      - name: Dependencies
+      - name:  Dependencies
         shell: bash
-        run: | 
-          sudo apt install -y doxygen
+        run:   sudo apt install -y doxygen
       
       # Configure doxygen file
       - name: Configure
@@ -33,10 +41,16 @@ jobs:
           cmake .. 
       
       # Run Doxygen
-      - name: Doxygenize
-        uses: langroodi/doxygenize@v1.6.3
-        with: 
-          doxygenconf:   './docs/doxyfile.in' # default is ./Doxyfile
-          htmloutput:    './docs/html/'       # default is ./docs/
-          ghpagesbranch: 'gh-pages'           # default is gh-pages
-          ghpagesdir:    './docs/html/'       # default is ./ 
+      - name: Generate Doxygen Documentation
+        shell: bash
+        run: doxygen ${{ inputs.doxygenconf }}
+        
+      
+        
+      #- name: Doxygenize
+      #  uses: langroodi/doxygenize@v1.6.3
+      #  with: 
+      #    doxygenconf:   './docs/doxyfile.in' # default is ./Doxyfile
+      #    htmloutput:    './docs/html/'       # default is ./docs/
+      #    ghpagesbranch: 'gh-pages'           # default is gh-pages
+      #    ghpagesdir:    './docs/html/'       # default is ./ 
