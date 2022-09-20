@@ -24,7 +24,7 @@ jobs:
       # Install dependencies
       - name:  Dependencies
         shell: bash
-        run:   sudo apt install -y doxygen graphviz plantuml
+        run:   sudo apt install -y doxygen git openssh graphviz ttf-freefont plantuml
       
       # Configure doxygen file
       - name: Configure
@@ -44,7 +44,14 @@ jobs:
         shell: bash 
         run: |
           git config --global user.name github-actions[bot]
-          git config --global user.email github-actions[bot]@users.noreply.github.com
+          git config --global user.email github-actions[bot]@users.noreply.github.com          
+          git add --force ./docs/html
+          git stash save ./docs/html
+          git remote update
+          git checkout gh-pages
+          git rm -rf .docs/html
+          mkdir -p .docs/html
+          git stash pop         
           git reset
           git add --force ./docs/html/*
           git commit -m "Auto commit"
