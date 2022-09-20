@@ -40,16 +40,6 @@ jobs:
         run: doxygen ./docs/doxyfile.in
         
        # Publish doc
-      - name: Push Documentation 1
+      - name: Push Documentation
         shell: bash
-        run: ls -R && git status
-        
-      - name: Checkout Repository gh-pages branch
-        uses: actions/checkout@v2
-        with:
-          ref: gh-pages
-        
-      # Publish doc
-      - name: Push Documentation 2
-        shell: bash
-        run: ls -R && git status
+        run: ls -R && git status && git checkout -b gh-pages && git add ./docs/html/* && git commit -m "Auto commit  documentation" && git status
