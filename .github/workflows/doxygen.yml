@@ -16,7 +16,7 @@ jobs:
   docs:
     runs-on: ubuntu-latest
     steps:
-      - name: Checkout Repository
+      - name: Checkout Repository main branch
         uses: actions/checkout@v2
         with: 
             submodules: "true"
@@ -38,6 +38,11 @@ jobs:
       - name: Generate Doxygen Documentation
         shell: bash
         run: doxygen ./docs/doxyfile.in
+        
+      - name: Checkout Repository gh-pages branch
+      - uses: actions/checkout@v2
+        with:
+          ref: gh-pages
         
       # Publish doc
       - name: Push Documentation
