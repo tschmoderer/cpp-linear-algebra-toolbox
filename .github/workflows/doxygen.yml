@@ -39,12 +39,7 @@ jobs:
         shell: bash
         run: doxygen ./docs/doxyfile.in
         
-      
-        
-      #- name: Doxygenize
-      #  uses: langroodi/doxygenize@v1.6.3
-      #  with: 
-      #    doxygenconf:   './docs/doxyfile.in' # default is ./Doxyfile
-      #    htmloutput:    './docs/html/'       # default is ./docs/
-      #    ghpagesbranch: 'gh-pages'           # default is gh-pages
-      #    ghpagesdir:    './docs/html/'       # default is ./ 
+    # Publish doc
+      - name: Push documentation
+        shell: bash
+        run: git status
