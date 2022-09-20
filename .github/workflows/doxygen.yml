@@ -24,7 +24,7 @@ jobs:
       # Install dependencies
       - name:  Dependencies
         shell: bash
-        run:   sudo apt install -y doxygen git openssh graphviz plantuml
+        run:   sudo apt install -y doxygen git graphviz plantuml
       
       # Configure doxygen file
       - name: Configure
