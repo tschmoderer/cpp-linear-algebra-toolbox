@@ -47,4 +47,4 @@ jobs:
       # Publish doc
       - name: Push Documentation
         shell: bash
-        run: ls -r ./docs && git branch && git checkout gh-pages && git status
+        run: ls -r ./docs/html && git branch && git checkout gh-pages && git status
