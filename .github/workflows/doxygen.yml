@@ -1,4 +1,4 @@
-name: docs
+name: 'Generate documentation with doxygen'
 
 on:
   push:
@@ -11,12 +11,6 @@ on:
       - '**.h'
       - 'docs/doxyfile.conf'
   workflow_dispatch:
-
-inputs:
-    doxygenconf:
-        description: "Location of the doxygen configuration file"
-        required: true
-        default:  "./docs/doxyconfig.in"
 
 jobs:
   docs:
@@ -43,7 +37,7 @@ jobs:
       # Run Doxygen
       - name: Generate Doxygen Documentation
         shell: bash
-        run: doxygen ${{ inputs.doxygenconf }}
+        run: doxygen ./docs/doxyconfig.in
         
       
         
