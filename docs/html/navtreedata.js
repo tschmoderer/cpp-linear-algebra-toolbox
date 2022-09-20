@@ -24,12 +24,46 @@
 */
 var NAVTREE =
 [
-  [ "CPP Linear Algebra ToolBox", "index.html", ]
+  [ "CPP Linear Algebra ToolBox", "index.html", [
+    [ "Linear Algebra ToolBox", "index.html", [
+      [ "Build sources", "index.html#autotoc_md1", [
+        [ "Windows", "index.html#autotoc_md2", null ],
+        [ "Unix systems", "index.html#autotoc_md3", null ],
+        [ "MacOs", "index.html#autotoc_md4", null ]
+      ] ],
+      [ "Crédits", "index.html#autotoc_md5", null ]
+    ] ],
+    [ "Todo List", "todo.html", null ],
+    [ "Classes", "annotated.html", [
+      [ "Class List", "annotated.html", "annotated_dup" ],
+      [ "Class Index", "classes.html", null ],
+      [ "Class Hierarchy", "hierarchy.html", "hierarchy" ],
+      [ "Class Members", "functions.html", [
+        [ "All", "functions.html", null ],
+        [ "Functions", "functions_func.html", null ],
+        [ "Variables", "functions_vars.html", null ],
+        [ "Related Functions", "functions_rela.html", null ]
+      ] ]
+    ] ],
+    [ "Files", "files.html", [
+      [ "File List", "files.html", "files_dup" ],
+      [ "File Members", "globals.html", [
+        [ "All", "globals.html", null ],
+        [ "Functions", "globals_func.html", null ],
+        [ "Variables", "globals_vars.html", null ],
+        [ "Typedefs", "globals_type.html", null ],
+        [ "Enumerations", "globals_enum.html", null ],
+        [ "Enumerator", "globals_eval.html", null ],
+        [ "Macros", "globals_defs.html", null ]
+      ] ]
+    ] ]
+  ] ]
 ];
 
 var NAVTREEINDEX =
 [
-"index.html"
+"annotated.html",
+"vector_8cpp.html#ac05824c584cfc758e7c79e215ebda4ec"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';
