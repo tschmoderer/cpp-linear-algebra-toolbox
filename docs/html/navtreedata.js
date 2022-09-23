@@ -26,12 +26,13 @@ var NAVTREE =
 [
   [ "@CMAKE_PROJECT_NAME@", "index.html", [
     [ "Linear Algebra ToolBox", "index.html", [
-      [ "Build sources", "index.html#autotoc_md1", [
+      [ "Building sources", "index.html#autotoc_md1", [
         [ "Windows", "index.html#autotoc_md2", null ],
         [ "Unix systems", "index.html#autotoc_md3", null ],
         [ "MacOs", "index.html#autotoc_md4", null ]
       ] ],
-      [ "Crédits", "index.html#autotoc_md5", null ]
+      [ "Documentation", "index.html#autotoc_md5", null ],
+      [ "Credits", "index.html#autotoc_md6", null ]
     ] ],
     [ "Todo List", "todo.html", null ],
     [ "Classes", "annotated.html", [
@@ -63,7 +64,7 @@ var NAVTREE =
 var NAVTREEINDEX =
 [
 "annotated.html",
-"vector_8cpp.html#ac05824c584cfc758e7c79e215ebda4ec"
+"vector_8cpp.html#ab1aae2c92becaaf01afd16ee398a842f"
 ];
 
 var SYNCONMSG = 'click to disable panel synchronisation';

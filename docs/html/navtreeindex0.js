@@ -162,6 +162,7 @@ var NAVTREEINDEX0 =
 "index.html#autotoc_md3":[0,0,1],
 "index.html#autotoc_md4":[0,0,2],
 "index.html#autotoc_md5":[0,1],
+"index.html#autotoc_md6":[0,2],
 "linalg_8cpp.html":[3,0,1,1],
 "linalg_8cpp.html#a169ba047bfe9a5c94632d2d96b11595e":[3,0,1,1,2],
 "linalg_8cpp.html#a78e3ea7c97ffc79c728c081fecd5e830":[3,0,1,1,1],
@@ -248,6 +249,5 @@ var NAVTREEINDEX0 =
 "vector_8cpp.html#a6a24a145e613478bdecbfa3c46072700":[3,0,1,6,11],
 "vector_8cpp.html#a83fd60406f6b051aa02ae7458f78349c":[3,0,1,6,15],
 "vector_8cpp.html#a8e98601727a813874d045d629d04facf":[3,0,1,6,16],
-"vector_8cpp.html#a989a051054f6aaef8a1032a899153427":[3,0,1,6,14],
-"vector_8cpp.html#ab1aae2c92becaaf01afd16ee398a842f":[3,0,1,6,0]
+"vector_8cpp.html#a989a051054f6aaef8a1032a899153427":[3,0,1,6,14]
 };
