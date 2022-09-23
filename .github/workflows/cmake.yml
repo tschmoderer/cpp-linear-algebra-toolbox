@@ -34,7 +34,8 @@ jobs:
       - name: Dependencies
         shell: bash
         run: | 
-          sudo apt install -y valgrind
+          sudo apt install -y valgrind doxygen python3-pip 
+          pip3 install numpy matplotlib
 
       # Configure cmake
       - name: Configure
