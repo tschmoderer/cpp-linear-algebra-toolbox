@@ -16,7 +16,7 @@ enable_testing()
 # define directories
 set(SRC      ${PROJECT_SOURCE_DIR}/src)
 set(TESTS    ${PROJECT_SOURCE_DIR}/tests)
-set(EXAMPLES ${PROJECT_SOURCE_DIR}/examples)
+set(EXAMPLES ${PROJECT_SOURCE_DIR}/example)
 set(DOCS     ${PROJECT_SOURCE_DIR}/docs)
 
 add_subdirectory(${SRC})
