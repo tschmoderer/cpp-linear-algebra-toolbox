@@ -10,7 +10,7 @@ find_package(Doxygen)
 if (DOXYGEN_FOUND)
     # note the option ALL which allows to build the docs together with the application
     add_custom_target(docs
-        COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT} && xd
+        COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT} && xdg-open ${DOCS}/index.html
         WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
         COMMENT "Generating API documentation with Doxygen"
         VERBATIM )
