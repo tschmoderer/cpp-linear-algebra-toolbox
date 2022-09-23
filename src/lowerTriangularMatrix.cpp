@@ -52,7 +52,7 @@ LTMatrix::LTMatrix(const LTMatrix & in) {
     this->n_cols = in.n_cols; 
     this->n_elements = in.n_elements; 
     this->data = new double[this->n_elements];
-    for (int i = 0; i < this->n_elements; i++) {
+    for (uint32_t i = 0; i < this->n_elements; i++) {
         this->data[i] = in.data[i]; 
     }
 } 
@@ -102,7 +102,7 @@ LTMatrix & LTMatrix::operator=(const LTMatrix & L) {
         this->n_elements = L.n_elements;
         this->data = new double[this->n_elements];
     }
-    for (int i = 0; i < this->n_elements; i++) {
+    for (uint32_t i = 0; i < this->n_elements; i++) {
         this->data[i] = L.data[i];
     }
     return *this;
@@ -110,7 +110,7 @@ LTMatrix & LTMatrix::operator=(const LTMatrix & L) {
 
 LTMatrix LTMatrix::operator-() const {
     LTMatrix L(this->n_rows); 
-    for (int i = 0; i < this->n_elements; i++) {
+    for (uint32_t i = 0; i < this->n_elements; i++) {
         L(i) = -this->data[i];
     }
     return L;
@@ -154,7 +154,7 @@ Vector operator*(const LTMatrix & lhs, const Vector & rhs) {
 LTMatrix operator*(const double k, const LTMatrix & L) {
     LTMatrix A(L); 
     if (k != 0) {
-        for (int i = 0; i < A.n_elements; i++) {
+        for (uint32_t i = 0; i < A.n_elements; i++) {
             A.data[i] *= k;
         }
     }
@@ -169,7 +169,7 @@ LTMatrix operator+(const LTMatrix & lhs, const LTMatrix & rhs) {
     assert(lhs.n_rows == rhs.n_rows); 
     assert(lhs.n_cols == rhs.n_cols);
     LTMatrix A(lhs.n_rows);
-    for (int i = 0; i < lhs.n_elements; i++) {
+    for (uint32_t i = 0; i < lhs.n_elements; i++) {
         A.data[i] = lhs.data[i] + rhs.data[i];
     }
     return A;
@@ -178,7 +178,7 @@ LTMatrix operator+(const LTMatrix & lhs, const LTMatrix & rhs) {
 LTMatrix operator+(const double k, const LTMatrix & L) {
     LTMatrix A(L); 
     if (k != 0) {
-        for (int i = 0; i < A.n_elements; i++) {
+        for (uint32_t i = 0; i < A.n_elements; i++) {
             A.data[i] += k;
         }
     }
@@ -193,7 +193,7 @@ LTMatrix operator-(const LTMatrix & lhs, const LTMatrix & rhs) {
     assert(lhs.n_rows == rhs.n_rows); 
     assert(lhs.n_cols == rhs.n_cols); 
     LTMatrix A(lhs.n_rows);
-    for (int i = 0; i < lhs.n_elements; i++) {
+    for (uint32_t i = 0; i < lhs.n_elements; i++) {
         A.data[i] = lhs.data[i] - rhs.data[i];
     }
     return A;
@@ -202,7 +202,7 @@ LTMatrix operator-(const LTMatrix & lhs, const LTMatrix & rhs) {
 LTMatrix operator-(const LTMatrix & L, const double k) {
     LTMatrix A(L); 
     if (k != 0) {
-        for (int i = 0; i < A.n_elements; i++) {
+        for (uint32_t i = 0; i < A.n_elements; i++) {
             A.data[i] -= k;
         }
     }
@@ -216,7 +216,7 @@ LTMatrix operator-(const double k, const LTMatrix & L) {
 LTMatrix operator/(const LTMatrix & L, const double k) {
     assert(k != 0); 
     LTMatrix A(L); 
-    for (int i = 0; i < A.get_n_elements(); i++) {
+    for (uint32_t i = 0; i < A.get_n_elements(); i++) {
         A.data[i] /= k;
     }
     return A;
@@ -273,7 +273,7 @@ LTMatrix LTMatrix::ones(uint16_t n) {
 LTMatrix LTMatrix::rand(uint16_t n) {
     srand(time(NULL));
     LTMatrix L(n); 
-    for (int i = 0; i < L.get_n_elements(); i++) {
+    for (uint32_t i = 0; i < L.get_n_elements(); i++) {
         L(i) = ((double) std::rand() / (RAND_MAX)); 
     }
     return L; 
@@ -282,7 +282,7 @@ LTMatrix LTMatrix::rand(uint16_t n) {
 LTMatrix LTMatrix::rand(uint16_t m, uint16_t n) {
     srand(time(NULL));
     LTMatrix L(m, n); 
-    for (int i = 0; i < L.get_n_elements(); i++) {
+    for (uint32_t i = 0; i < L.get_n_elements(); i++) {
         L(i) = ((double) std::rand() / (RAND_MAX)); 
     }
     return L; 

@@ -8,7 +8,7 @@ int main(int argc, char * argv[]) {
     int N = 3; LTMatrix L1 = LTMatrix::rand(N); 
     std::cout << L1.get_n_rows() << " " << L1.get_n_cols() << " " << L1.get_n_elements() << std::endl << std::endl; 
 
-    for (int i = 0; i < L1.get_n_elements(); i++) {
+    for (uint32_t i = 0; i < L1.get_n_elements(); i++) {
         std::cout << L1(i) << std::endl;
     }
 
@@ -22,7 +22,7 @@ int main(int argc, char * argv[]) {
     int M = N + 5; LTMatrix L2 = LTMatrix::rand(M, N); 
     std::cout << L2.get_n_rows() << " " << L2.get_n_cols() << " " << L2.get_n_elements() << std::endl << std::endl; 
 
-    for (int i = 0; i < L2.get_n_elements(); i++) {
+    for (uint32_t i = 0; i < L2.get_n_elements(); i++) {
         std::cout << L2(i) << std::endl;
     }
 
