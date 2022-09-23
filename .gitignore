@@ -36,3 +36,5 @@ build/
 docs/html/
 
 docs/doxyfile.in
+
+.vscode/
