@@ -9,6 +9,7 @@ on:
       - '**.hpp'
       - '**.c'
       - '**.h'
+      - '**.in'
       - 'docs/doxyfile.conf'
   workflow_dispatch:
 
@@ -17,6 +18,16 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+        with: 
+          submodules: 'true'
+          
+      - name: Configure
+        shell: bash
+        run: |
+          mkdir -p build
+          cd build
+          cmake .. 
+
       - name: Doxygenize
         uses: langroodi/doxygenize@v1.6.3
         with: 
