@@ -44,9 +44,9 @@ jobs:
       
       # Push results
       - name: publish
-          env: 
-            CI_COMMIT_MESSAGE: Auto commit
-            CI_COMMIT_AUTHOR: github-actions[bot]
+        env: 
+          CI_COMMIT_MESSAGE: Auto commit
+          CI_COMMIT_AUTHOR: github-actions[bot]
         shell: bash
         run: |
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
