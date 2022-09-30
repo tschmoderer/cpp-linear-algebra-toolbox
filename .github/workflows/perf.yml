@@ -43,7 +43,7 @@ jobs:
           python3 perf/perf_linalg_lib.py
       
       # Push results
-      - name: publish
+      - name: Publish
         env: 
           CI_COMMIT_MESSAGE: Auto commit
           CI_COMMIT_AUTHOR: github-actions[bot]
@@ -52,6 +52,5 @@ jobs:
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "github-actions[bot]@users.noreply.github.com"
           git status
-          git add *
-          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git commit -a -m "${{ env.CI_COMMIT_MESSAGE }}"
           git status
