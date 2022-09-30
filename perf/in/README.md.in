@@ -1,4 +1,4 @@
-# Performance tests for linalg library v0.1.0
+# Performance tests for linalg library v@PROJECT_VERSION_MAJOR@.@PROJECT_VERSION_MINOR@.@PROJECT_VERSION_PATCH@
 
 ## Vector dot product perf
 

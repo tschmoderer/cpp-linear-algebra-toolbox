@@ -1,3 +1,10 @@
+# configure readme
+file(GLOB files "${PERF}/in/*.in")
+foreach(file ${files})
+    get_filename_component(CURFILENAME ${file} NAME_WLE)
+    configure_file(${file} ${PERF}/${CURFILENAME} @ONLY)
+endforeach()
+
 # folder wide compile options
 add_compile_options(-O3)
 
