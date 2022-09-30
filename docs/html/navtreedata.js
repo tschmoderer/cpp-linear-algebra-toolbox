@@ -24,7 +24,7 @@
 */
 var NAVTREE =
 [
-  [ "@CMAKE_PROJECT_NAME@", "index.html", [
+  [ "CPP Linear Algebra ToolBox", "index.html", [
     [ "Linear Algebra ToolBox", "index.html", [
       [ "Building sources", "index.html#autotoc_md1", [
         [ "Windows", "index.html#autotoc_md2", null ],
