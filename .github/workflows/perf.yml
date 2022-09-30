@@ -2,8 +2,6 @@ name: perf
 
 on:
   push:
-    branches: 
-      - main
     tags:
       - 'v*.*.*'
   workflow_dispatch:
