@@ -10,7 +10,7 @@ on:
       - '**.c'
       - '**.h'
       - '**.in'
-      - 'docs/doxyfile.conf'
+      - 'docs/doxyfile.in'
   workflow_dispatch:
 
 jobs:
