@@ -4,7 +4,7 @@
 * @version @PROJECT_VERSION_MAJOR@.@PROJECT_VERSION_MINOR@.@PROJECT_VERSION_PATCH@
 * @date @TODAY@
 * @copyright Copyright (c) @YEAR@. All rights reserved. This project is released under the @LICENSE@.
-* @brief 
+* @brief Header file for Diagonal Matrix type
 */
 
 #ifndef DIAGONAL_MATRIX_H
