@@ -1,6 +1,6 @@
 <map id="include/vector.h" name="include/vector.h">
 <area shape="rect" id="node1" title="Header file for Vector class." alt="" coords="203,5,316,32"/>
-<area shape="rect" id="node2" href="$diagonal_matrix_8h.html" title=" " alt="" coords="15,80,175,107"/>
+<area shape="rect" id="node2" href="$diagonal_matrix_8h.html" title="Header file for Diagonal Matrix type." alt="" coords="15,80,175,107"/>
 <area shape="rect" id="node3" href="$linalg_8h.html" title="Main Header file for Linear Algebra Library." alt="" coords="182,229,289,256"/>
 <area shape="rect" id="node6" href="$matrix_8h.html" title="Header file for Matrix class." alt="" coords="297,80,409,107"/>
 <area shape="rect" id="node13" href="$vector_8cpp.html" title="Implementation file for Vector class." alt="" coords="433,80,537,107"/>
