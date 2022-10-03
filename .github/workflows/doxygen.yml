@@ -58,5 +58,9 @@ jobs:
           mkdir -p ./docs/html/
           git stash pop
           git add docs/html/*
-          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
-          git push
+          if (! git diff --cached --exit-code --shortstat); then
+   	        git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+            git push
+          else
+    	      echo "There is no change in the documentation"
+          fi
