@@ -47,8 +47,9 @@ jobs:
         run: |
           git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
           git config --global user.email "${{ env.CI_COMMIT_EMAIL }}"
+          git fetch
           git checkout gh-pages
-          git add docs/html*
+          git add docs/*
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push
           
