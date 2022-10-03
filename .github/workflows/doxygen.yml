@@ -49,7 +49,7 @@ jobs:
           git config --global user.email "${{ env.CI_COMMIT_EMAIL }}"
           git fetch
           git checkout gh-pages
-          git add docs/*
+          git add docs/html/*
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push
           
