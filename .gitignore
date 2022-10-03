@@ -32,3 +32,5 @@
 *.app
 
 docs/doxyfile.conf
+
+build/
