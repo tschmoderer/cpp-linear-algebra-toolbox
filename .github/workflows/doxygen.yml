@@ -30,6 +30,7 @@ jobs:
         shell: bash
         run: |
           mkdir -p build
+          git fetch --tags
           cd build
           cmake ..  -D CMAKE_BUILD_TYPE=Debug
 
@@ -53,10 +54,3 @@ jobs:
           git add docs/html/*
           git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
           git push
-          
-        #uses: langroodi/doxygenize@v1.6.3
-        #with: 
-        #  doxygenconf:   './docs/doxyfile.conf' # default is ./Doxyfile
-        #  htmloutput:    './docs/html/'         # default is ./docs/
-        #  ghpagesbranch: 'gh-pages'             # default is gh-pages
-        #  ghpagesdir:    './docs/html/'         # default is ./ 
