@@ -36,6 +36,7 @@ jobs:
       - name: Doxygen
         shell: bash
         run: |
+          cd build
           make docs
 
       - name: Publish
