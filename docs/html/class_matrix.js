@@ -36,7 +36,7 @@ var class_matrix =
     [ "operator-", "class_matrix.html#af0301acbfc72cfc487b4e4c4b70570ae", null ],
     [ "operator-", "class_matrix.html#a9ed5b2e849ee4b8282934405339fd7a1", null ],
     [ "operator/", "class_matrix.html#a0ec2af4134287134efd7e4d0b2015a39", null ],
-    [ "operator<<", "class_matrix.html#af0d6a8b04f5a8094992e498ca5a71142", null ],
+    [ "operator<<", "class_matrix.html#ae2ae104792a7f65132d0cdca517536b4", null ],
     [ "operator==", "class_matrix.html#a5bc6c10242455687798e3344098cf9c3", null ],
     [ "data", "class_matrix.html#a7097cbd5ded96225e7f1fecb1c39936f", null ],
     [ "n_cols", "class_matrix.html#afced41d7949fa4bdc9c3c478848d4850", null ],

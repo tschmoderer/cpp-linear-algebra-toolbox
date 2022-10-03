@@ -21,5 +21,5 @@ var class_l_t_matrix =
     [ "operator-", "class_l_t_matrix.html#a44801dc827b93c855e53258ec11dc1c3", null ],
     [ "operator-", "class_l_t_matrix.html#ae9c7662f44aaea764042acd793e1b52e", null ],
     [ "operator/", "class_l_t_matrix.html#af29a32d068659cdbfca59ae78e24c31a", null ],
-    [ "operator<<", "class_l_t_matrix.html#a433a66bdfce5facd72948858ce4b2712", null ]
+    [ "operator<<", "class_l_t_matrix.html#accb46dfe5cc7b0baea47c1f99a0b8ede", null ]
 ];

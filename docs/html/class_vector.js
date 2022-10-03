@@ -30,7 +30,7 @@ var class_vector =
     [ "operator-", "class_vector.html#a628ef31aebf0cce00cdd6ea3e6592e11", null ],
     [ "operator-", "class_vector.html#ac4505f13a01e5d3312660626ae4ddebb", null ],
     [ "operator/", "class_vector.html#a46dfcca27ca97eb42fc7807e636f68e9", null ],
-    [ "operator<<", "class_vector.html#aa1c6fb4a35f54d4c24d1046d5f470aa3", null ],
+    [ "operator<<", "class_vector.html#a6c316605982f1ae62b0b660a10f70e52", null ],
     [ "operator==", "class_vector.html#a3005c0ba6d3f54126505a04e04f92c53", null ],
     [ "pow2", "class_vector.html#a8706dfe249de4c54fa9643caad58bc53", null ],
     [ "prod", "class_vector.html#ad3462d71c91b1bbabff9271a0181aa34", null ],

@@ -1,11 +1,11 @@
 <map id="include/diagonalMatrix.h" name="include/diagonalMatrix.h">
-<area shape="rect" id="node1" title="Header file for Diagonal Matrix type." alt="" coords="176,5,336,32"/>
-<area shape="rect" id="node2" href="$vector_8h.html" title="Header file for Vector class." alt="" coords="222,80,290,107"/>
-<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="228,155,284,181"/>
-<area shape="rect" id="node4" title=" " alt="" coords="5,229,67,256"/>
-<area shape="rect" id="node5" title=" " alt="" coords="91,229,152,256"/>
-<area shape="rect" id="node6" title=" " alt="" coords="177,229,242,256"/>
-<area shape="rect" id="node7" title=" " alt="" coords="267,229,339,256"/>
-<area shape="rect" id="node8" title=" " alt="" coords="363,229,426,256"/>
-<area shape="rect" id="node9" title=" " alt="" coords="450,229,515,256"/>
+<area shape="rect" id="node1" title="Header file for Diagonal Matrix type." alt="" coords="182,5,365,32"/>
+<area shape="rect" id="node2" href="$vector_8h.html" title="Header file for Vector class." alt="" coords="236,80,311,107"/>
+<area shape="rect" id="node3" href="$utils_8h.html" title=" " alt="" coords="242,155,305,181"/>
+<area shape="rect" id="node4" title=" " alt="" coords="5,229,72,256"/>
+<area shape="rect" id="node5" title=" " alt="" coords="97,229,165,256"/>
+<area shape="rect" id="node6" title=" " alt="" coords="189,229,259,256"/>
+<area shape="rect" id="node7" title=" " alt="" coords="283,229,363,256"/>
+<area shape="rect" id="node8" title=" " alt="" coords="387,229,458,256"/>
+<area shape="rect" id="node9" title=" " alt="" coords="483,229,555,256"/>
 </map>

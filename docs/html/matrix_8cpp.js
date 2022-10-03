@@ -12,6 +12,6 @@ var matrix_8cpp =
     [ "operator-", "matrix_8cpp.html#a5e4b2a5a7541e65bb32c50dbbf3fd295", null ],
     [ "operator-", "matrix_8cpp.html#af374f4e6a160ce4b932eece15ee43f42", null ],
     [ "operator/", "matrix_8cpp.html#a45c07b33d4d3f18800d691dd6e39a9b0", null ],
-    [ "operator<<", "matrix_8cpp.html#a4412d4de48ef729da0ad06ee948e54b8", null ],
+    [ "operator<<", "matrix_8cpp.html#a26be7980d94c40cdc27873675e2077f8", null ],
     [ "operator==", "matrix_8cpp.html#a9c177aa5c04d6ba7011ce67dc8294bc3", null ]
 ];
