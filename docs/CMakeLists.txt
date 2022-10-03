@@ -10,7 +10,7 @@ find_package(Doxygen)
 if (DOXYGEN_FOUND)
   if (NOT TARGET docs)
     add_custom_target(docs
-        COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT} && xdg-open ${DOCS}/index.html
+        COMMAND ${DOXYGEN_EXECUTABLE} ${DOXYGEN_OUT}
         WORKING_DIRECTORY ${PROJECT_SOURCE_DIR}
         COMMENT "Generating API documentation with Doxygen"
         VERBATIM )

@@ -33,10 +33,28 @@ jobs:
           cd build
           cmake ..  -D CMAKE_BUILD_TYPE=Debug
 
-      - name: Doxygenize
-        uses: langroodi/doxygenize@v1.6.3
-        with: 
-          doxygenconf:   './docs/doxyfile.conf' # default is ./Doxyfile
-          htmloutput:    './docs/html/'         # default is ./docs/
-          ghpagesbranch: 'gh-pages'             # default is gh-pages
-          ghpagesdir:    './docs/html/'         # default is ./ 
+      - name: Doxygen
+        shell: bash
+        run: |
+          make docs
+
+      - name: Publish
+        env: 
+          CI_COMMIT_MESSAGE: Auto commit
+          CI_COMMIT_AUTHOR: github-actions[bot]
+          CI_COMMIT_EMAIL: github-actions[bot]@users.noreply.github.com
+        shell: bash
+        run: |
+          git config --global user.name "${{ env.CI_COMMIT_AUTHOR }}"
+          git config --global user.email "${{ env.CI_COMMIT_EMAIL }}"
+          git checkout gh-pages
+          git add docs/html*
+          git commit -m "${{ env.CI_COMMIT_MESSAGE }}"
+          git push
+          
+        #uses: langroodi/doxygenize@v1.6.3
+        #with: 
+        #  doxygenconf:   './docs/doxyfile.conf' # default is ./Doxyfile
+        #  htmloutput:    './docs/html/'         # default is ./docs/
+        #  ghpagesbranch: 'gh-pages'             # default is gh-pages
+        #  ghpagesdir:    './docs/html/'         # default is ./ 
