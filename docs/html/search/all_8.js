@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['linear_20algebra_20toolbox_23',['Linear Algebra ToolBox',['../index.html',1,'']]],
-  ['linalg_2ecpp_24',['linalg.cpp',['../linalg_8cpp.html',1,'']]],
-  ['linalg_2eh_25',['linalg.h',['../linalg_8h.html',1,'']]],
+  ['linalg_2ecpp_23',['linalg.cpp',['../linalg_8cpp.html',1,'']]],
+  ['linalg_2eh_24',['linalg.h',['../linalg_8h.html',1,'']]],
+  ['linear_20algebra_20toolbox_25',['Linear Algebra ToolBox',['../index.html',1,'']]],
   ['linspace_26',['linspace',['../class_vector.html#af7cd240e7eb8ef88949a3cd7dd8cf138',1,'Vector']]],
   ['lowertriangularmatrix_2ecpp_27',['lowerTriangularMatrix.cpp',['../lower_triangular_matrix_8cpp.html',1,'']]],
   ['lowertriangularmatrix_2eh_28',['lowerTriangularMatrix.h',['../lower_triangular_matrix_8h.html',1,'']]],

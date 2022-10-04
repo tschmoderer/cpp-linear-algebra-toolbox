@@ -1,8 +1,8 @@
 var searchData=
 [
-  ['vandermonde_85',['vandermonde',['../class_matrix.html#a5107a216dd22e1bd5fcb6c1d7a31985d',1,'Matrix::vandermonde()'],['../class_square_matrix.html#aa642da108cb635975897c36068bb11c7',1,'SquareMatrix::vandermonde()']]],
-  ['vector_86',['Vector',['../class_vector.html',1,'Vector'],['../class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5',1,'Vector::Vector()'],['../class_vector.html#a199dd6e7d5169d0cf63db0200c6208ed',1,'Vector::Vector(uint16_t)'],['../class_vector.html#a6131b0efbf6b788121470e41567a39c9',1,'Vector::Vector(double *, uint16_t)'],['../class_vector.html#a130470658bcf6440baa7280f4b94449b',1,'Vector::Vector(const Vector &amp;)']]],
-  ['vector_2ecpp_87',['vector.cpp',['../vector_8cpp.html',1,'']]],
-  ['vector_2eh_88',['vector.h',['../vector_8h.html',1,'']]],
-  ['version_5flinalg_5flib_89',['VERSION_LINALG_LIB',['../linalg_8h.html#a0da489f5a37456a0e011548c7883e676',1,'linalg.h']]]
+  ['vandermonde_86',['vandermonde',['../class_matrix.html#a5107a216dd22e1bd5fcb6c1d7a31985d',1,'Matrix::vandermonde()'],['../class_square_matrix.html#aa642da108cb635975897c36068bb11c7',1,'SquareMatrix::vandermonde()']]],
+  ['vector_87',['Vector',['../class_vector.html',1,'Vector'],['../class_vector.html#a6f80c73b5f18dcf3f8e36065bdc8b9e5',1,'Vector::Vector()'],['../class_vector.html#a199dd6e7d5169d0cf63db0200c6208ed',1,'Vector::Vector(uint16_t)'],['../class_vector.html#a6131b0efbf6b788121470e41567a39c9',1,'Vector::Vector(double *, uint16_t)'],['../class_vector.html#a130470658bcf6440baa7280f4b94449b',1,'Vector::Vector(const Vector &amp;)']]],
+  ['vector_2ecpp_88',['vector.cpp',['../vector_8cpp.html',1,'']]],
+  ['vector_2eh_89',['vector.h',['../vector_8h.html',1,'']]],
+  ['version_5flinalg_5flib_90',['VERSION_LINALG_LIB',['../linalg_8h.html#a0da489f5a37456a0e011548c7883e676',1,'linalg.h']]]
 ];
