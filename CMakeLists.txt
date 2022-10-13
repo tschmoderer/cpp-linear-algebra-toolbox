@@ -9,6 +9,15 @@ set(CMAKE_CXX_STANDARD 17)
 set(CMAKE_CXX_FLAGS_DEBUG "-g -Wall")
 set(CMAKE_CXX_FLAGS_RELEASE "-O3")
 
+# Define variables
+set(AUTHOR "T. Schmoderer")
+set(AUTHOR_MAIL "iathena@mailo.com")
+string(TIMESTAMP TODAY "%Y-%m-%d")
+string(TIMESTAMP YEAR "%Y")
+set(DOCUMENTATION_ADDR "https://tschmoderer.github.io/motion-planning-toolbox/html/index.html")
+set(LICENSE "GNU GENERAL PUBLIC LICENSE")
+set(CMAKE_PROJECT_DESCRIPTION "")
+
 # Define version from Git tags
 find_package(Git)
 if (NOT GIT_FOUND)
