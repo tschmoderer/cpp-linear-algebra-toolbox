@@ -59,12 +59,6 @@ endif()
 include(CTest)
 enable_testing()
 
-# Define variables
-set(AUTHOR "T. Schmoderer (iathena@mailo.com)")
-string(TIMESTAMP TODAY "%Y-%m-%d")
-string(TIMESTAMP YEAR "%Y")
-set(LICENSE "GNU GENERAL PUBLIC LICENSE")
-
 # Define directories
 set(INC      ${PROJECT_SOURCE_DIR}/include)
 set(SRC      ${PROJECT_SOURCE_DIR}/src)
