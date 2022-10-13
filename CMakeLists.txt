@@ -16,7 +16,7 @@ string(TIMESTAMP TODAY "%Y-%m-%d")
 string(TIMESTAMP YEAR "%Y")
 set(DOCUMENTATION_ADDR "https://tschmoderer.github.io/motion-planning-toolbox/html/index.html")
 set(LICENSE "GNU GENERAL PUBLIC LICENSE")
-set(CMAKE_PROJECT_DESCRIPTION "")
+set(CMAKE_PROJECT_DESCRIPTION "A standlone C++ library for linear algebra.")
 
 # Define version from Git tags
 find_package(Git)
