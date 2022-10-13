@@ -1,6 +1,6 @@
 /**
 * @file @CURFILENAME@
-* @author @AUTHOR@
+* @author @AUTHOR@ (@AUTHOR_MAIL@)
 * @version @PROJECT_VERSION_MAJOR@.@PROJECT_VERSION_MINOR@.@PROJECT_VERSION_PATCH@
 * @date @TODAY@
 * @copyright Copyright (c) @YEAR@
@@ -11,10 +11,10 @@
 #define LINALG_H
 
 /* VERSION MACROS */
-#define VERSION_LINALG_LIB       "1.0.0"
-#define AUTHOR_LINALG_LIB        "T. SCHMODERER/BOHEME"
-#define CONTACT_LINALG_LIB       "iathena@mailo.com"
-#define DOCUMENTATION_LINALG_LIB "https://tschmoderer.github.io/motion-planning-toolbox/html/index.html"
+#define VERSION_LINALG_LIB       "@PROJECT_VERSION_MAJOR@.@PROJECT_VERSION_MINOR@.@PROJECT_VERSION_PATCH@"
+#define AUTHOR_LINALG_LIB        "@AUTHOR@"
+#define CONTACT_LINALG_LIB       "@AUTHOR_MAIL@"
+#define DOCUMENTATION_LINALG_LIB "@DOCUMENTATION_ADDR@"
 
 /* INCLUDE ALL HEADERS */
 #include "utils.h"

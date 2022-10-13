@@ -2,7 +2,7 @@
 * @file vector.h
 * @author T. Schmoderer (iathena@mailo.com)
 * @version 0.1.0
-* @date 2022-09-30
+* @date 2022-10-13
 * @copyright Copyright (c) 2022. All rights reserved. This project is released under the GNU GENERAL PUBLIC LICENSE.
 * @brief Header file for Vector class
 */
@@ -19,6 +19,8 @@
 * @warning Maximum dimension of a Vector is 65 535
 * @warning Indices are 0-based. Math formulae must be adapted consequently.
 * @todo    Template this class to use different data types (double, float, complex)
+* @todo    Parallelize the class
+* @todo    Interface with eigen or other lib if exists
 */
 class Vector {
     public: 

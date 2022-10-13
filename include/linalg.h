@@ -2,7 +2,7 @@
 * @file linalg.h
 * @author T. Schmoderer (iathena@mailo.com)
 * @version 0.1.0
-* @date 2022-09-30
+* @date 2022-10-13
 * @copyright Copyright (c) 2022
 * @brief Main Header file for Linear Algebra Library
 */
@@ -11,8 +11,8 @@
 #define LINALG_H
 
 /* VERSION MACROS */
-#define VERSION_LINALG_LIB       "1.0.0"
-#define AUTHOR_LINALG_LIB        "T. SCHMODERER/BOHEME"
+#define VERSION_LINALG_LIB       "0.1.0"
+#define AUTHOR_LINALG_LIB        "T. Schmoderer"
 #define CONTACT_LINALG_LIB       "iathena@mailo.com"
 #define DOCUMENTATION_LINALG_LIB "https://tschmoderer.github.io/motion-planning-toolbox/html/index.html"
 
