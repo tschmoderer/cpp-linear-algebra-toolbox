@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/matrix.h"
+#include "../include/header/matrix.h"
 
 int main(int argc, char * argv[]) {
     Matrix M1(2,3);

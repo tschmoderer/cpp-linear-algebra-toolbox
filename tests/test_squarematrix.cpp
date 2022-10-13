@@ -1,4 +1,4 @@
-#include "../include/squareMatrix.h"
+#include "../include/header/squareMatrix.h"
 #include "error_code.h"
 
 void test_contructors() {

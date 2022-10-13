@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/linalg.h"
+#include "../include/header/linalg.h"
 
 int main(int argc, char * argv[]) {
     int n = 10;

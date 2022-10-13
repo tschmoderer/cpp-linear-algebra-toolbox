@@ -1,5 +1,5 @@
 #include <iostream>
-#include "../include/squareMatrix.h"
+#include "../include/header/squareMatrix.h"
 
 int main(int argc, char * argv[]) {
 

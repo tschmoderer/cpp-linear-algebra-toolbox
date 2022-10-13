@@ -1,7 +1,7 @@
 #include <iostream>
 #include <stdlib.h>
 #include <chrono>
-#include "../include/vector.h"
+#include "../include/header/vector.h"
 
 #define ERR_NO_ARGUMENT 1
 #define ERR_WRONG_TYPE_ARGUMENT 2

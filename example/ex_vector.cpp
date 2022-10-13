@@ -1,4 +1,4 @@
-#include "../include/vector.h"
+#include "../include/header/vector.h"
 
 int main(int argc, char * argv[]) {
     int n = 5; 
