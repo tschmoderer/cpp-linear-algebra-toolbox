@@ -1,5 +1,5 @@
 # Configure documentation variable of header files 
-file(GLOB files "${INC}/in/*.in")
+file(GLOB files "${INC}/*.in")
 if (NOT GIT_FOUND)
     message("Git not found, headers ${files} will not be configured.")
 else()
@@ -15,7 +15,7 @@ else()
         if (NOT "${GIT_DIFF_FILES}" STREQUAL "")
             # FILE HAS MODIFICATIONS 
             get_filename_component(CURFILENAME ${file} NAME_WLE)
-            configure_file(${file} ${INC}/${CURFILENAME} @ONLY)
+            configure_file(${file} ${INC}/header/${CURFILENAME} @ONLY)
         else()
             # FILE HAS NO MODIFICATIONS
         endif()

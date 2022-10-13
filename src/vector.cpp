@@ -1,13 +1,4 @@
-/**
-* @file vector.cpp
-* @author T. Schmoderer (iathena@mailo.com)
-* @version 0.1.0
-* @date 2022-09-30
-* @copyright Copyright (c) 2022. All rights reserved. This project is released under the GNU GENERAL PUBLIC LICENSE.
-* @brief Implementation file for Vector class
-*/
-
-#include "../include/vector.h"
+#include "../include/header/vector.h"
 
 /* CONSTRUCTORS */
 

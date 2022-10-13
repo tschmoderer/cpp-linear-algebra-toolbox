@@ -1,4 +1,4 @@
-#include "../include/lowerTriangularMatrix.h"
+#include "../include/header/lowerTriangularMatrix.h"
 
 /* CONSTRUCTORS */
 

@@ -1,4 +1,4 @@
-#include "../include/linalg.h"
+#include "../include/header/linalg.h"
 
 double tr(const DiagonalMatrix & D) {
     return sum(D);
