@@ -7,7 +7,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=9" />
    <meta name="generator" content="Doxygen 1.9.1" />
    <meta name="viewport" content="width=device-width, initial-scale=1" />
-   <title>CPP Linear Algebra ToolBox: include/linalg.h File Reference</title>
+   <title>CPP Linear Algebra ToolBox: include/header/linalg.h File Reference</title>
    <link href="tabs.css" rel="stylesheet" type="text/css" />
    <link rel="shortcut icon" href="cpp-linalg-logo-bw.ico" type="image/x-icon" />
    <script type="text/javascript" src="jquery.js"></script>
@@ -119,9 +119,9 @@ $(document).ready(function(){initNavTree('linalg_8h.html',''); initResizable(); 
 </div><div class="textblock"><div class="dynheader">
 Include dependency graph for linalg.h:</div>
 <div class="dyncontent">
-<div class="center"><img src="linalg_8h__incl.png" border="0" usemap="#ainclude_2linalg_8h" alt=""/></div>
-<map name="ainclude_2linalg_8h" id="ainclude_2linalg_8h">
-<area shape="rect" title="Main Header file for Linear Algebra Library." alt="" coords="113,5,235,32"/>
+<div class="center"><img src="linalg_8h__incl.png" border="0" usemap="#ainclude_2header_2linalg_8h" alt=""/></div>
+<map name="ainclude_2header_2linalg_8h" id="ainclude_2header_2linalg_8h">
+<area shape="rect" title="Main Header file for Linear Algebra Library." alt="" coords="89,5,259,32"/>
 <area shape="rect" href="utils_8h.html" title=" " alt="" coords="317,304,380,331"/>
 <area shape="rect" href="vector_8h.html" title="Header file for Vector class." alt="" coords="66,229,141,256"/>
 <area shape="rect" href="matrix_8h.html" title="Header file for Matrix class." alt="" coords="179,155,257,181"/>
@@ -140,10 +140,10 @@ Include dependency graph for linalg.h:</div>
 </div><div class="textblock"><div class="dynheader">
 This graph shows which files directly or indirectly include this file:</div>
 <div class="dyncontent">
-<div class="center"><img src="linalg_8h__dep__incl.png" border="0" usemap="#ainclude_2linalg_8hdep" alt=""/></div>
-<map name="ainclude_2linalg_8hdep" id="ainclude_2linalg_8hdep">
-<area shape="rect" title="Main Header file for Linear Algebra Library." alt="" coords="5,5,127,32"/>
-<area shape="rect" href="linalg_8cpp.html" title=" " alt="" coords="12,80,120,107"/>
+<div class="center"><img src="linalg_8h__dep__incl.png" border="0" usemap="#ainclude_2header_2linalg_8hdep" alt=""/></div>
+<map name="ainclude_2header_2linalg_8hdep" id="ainclude_2header_2linalg_8hdep">
+<area shape="rect" title="Main Header file for Linear Algebra Library." alt="" coords="5,5,176,32"/>
+<area shape="rect" href="linalg_8cpp.html" title=" " alt="" coords="37,80,145,107"/>
 </map>
 </div>
 </div>
@@ -151,9 +151,9 @@ This graph shows which files directly or indirectly include this file:</div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a name="define-members"></a>
 Macros</h2></td></tr>
-<tr class="memitem:a0da489f5a37456a0e011548c7883e676"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linalg_8h.html#a0da489f5a37456a0e011548c7883e676">VERSION_LINALG_LIB</a>&#160;&#160;&#160;&quot;1.0.0&quot;</td></tr>
+<tr class="memitem:a0da489f5a37456a0e011548c7883e676"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linalg_8h.html#a0da489f5a37456a0e011548c7883e676">VERSION_LINALG_LIB</a>&#160;&#160;&#160;&quot;0.1.0&quot;</td></tr>
 <tr class="separator:a0da489f5a37456a0e011548c7883e676"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a64e165812f349817c3c20798263ca55d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linalg_8h.html#a64e165812f349817c3c20798263ca55d">AUTHOR_LINALG_LIB</a>&#160;&#160;&#160;&quot;T. SCHMODERER/BOHEME&quot;</td></tr>
+<tr class="memitem:a64e165812f349817c3c20798263ca55d"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linalg_8h.html#a64e165812f349817c3c20798263ca55d">AUTHOR_LINALG_LIB</a>&#160;&#160;&#160;&quot;T. Schmoderer&quot;</td></tr>
 <tr class="separator:a64e165812f349817c3c20798263ca55d"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:af3a13d8b69bc2841e462fd1ac3ccd6f8"><td class="memItemLeft" align="right" valign="top">#define&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="linalg_8h.html#af3a13d8b69bc2841e462fd1ac3ccd6f8">CONTACT_LINALG_LIB</a>&#160;&#160;&#160;&quot;iathena@mailo.com&quot;</td></tr>
 <tr class="separator:af3a13d8b69bc2841e462fd1ac3ccd6f8"><td class="memSeparator" colspan="2">&#160;</td></tr>
@@ -171,7 +171,7 @@ Functions</h2></td></tr>
 <div class="textblock"><p>Main Header file for Linear Algebra Library. </p>
 <dl class="section author"><dt>Author</dt><dd>T. Schmoderer (<a href="#" onclick="location.href='mai'+'lto:'+'iat'+'he'+'na@'+'ma'+'ilo'+'.c'+'om'; return false;">iathe<span style="display: none;">.nosp@m.</span>na@m<span style="display: none;">.nosp@m.</span>ailo.<span style="display: none;">.nosp@m.</span>com</a>) </dd></dl>
 <dl class="section version"><dt>Version</dt><dd>0.1.0 </dd></dl>
-<dl class="section date"><dt>Date</dt><dd>2022-09-30 </dd></dl>
+<dl class="section date"><dt>Date</dt><dd>2022-10-13 </dd></dl>
 <dl class="section copyright"><dt>Copyright</dt><dd>Copyright (c) 2022 </dd></dl>
 </div><h2 class="groupheader">Macro Definition Documentation</h2>
 <a id="a64e165812f349817c3c20798263ca55d"></a>
@@ -181,7 +181,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define AUTHOR_LINALG_LIB&#160;&#160;&#160;&quot;T. SCHMODERER/BOHEME&quot;</td>
+          <td class="memname">#define AUTHOR_LINALG_LIB&#160;&#160;&#160;&quot;T. Schmoderer&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -223,7 +223,7 @@ Functions</h2></td></tr>
 <div class="memproto">
       <table class="memname">
         <tr>
-          <td class="memname">#define VERSION_LINALG_LIB&#160;&#160;&#160;&quot;1.0.0&quot;</td>
+          <td class="memname">#define VERSION_LINALG_LIB&#160;&#160;&#160;&quot;0.1.0&quot;</td>
         </tr>
       </table>
 </div><div class="memdoc">
@@ -298,7 +298,7 @@ Functions</h2></td></tr>
       aria-hidden="true"></i> Email</a></li>
     <li><a href="https://github.com/tschmoderer/cpp-linear-algebra-toolbox" target="_blank"><i class="fab fa-fw fa-github" aria-hidden="true"></i>
     Github</a></li>
-    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="linalg_8h.html">linalg.h</a></li>
+    <li class="navelem"><a class="el" href="dir_d44c64559bbebec7f509842c48db8b23.html">include</a></li><li class="navelem"><a class="el" href="dir_22759b2357b28df387ac7f15bd61889c.html">header</a></li><li class="navelem"><a class="el" href="linalg_8h.html">linalg.h</a></li>
     <li class="footer">Generated by <a href="https://www.doxygen.org/index.html"><img class="footer"
           src="doxygen.svg" width="104" height="31" alt="doxygen" /></a> 1.9.1 </li>
   </ul>

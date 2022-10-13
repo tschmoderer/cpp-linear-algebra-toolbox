@@ -1,5 +1,5 @@
-<map id="include/linalg.h" name="include/linalg.h">
-<area shape="rect" id="node1" title="Main Header file for Linear Algebra Library." alt="" coords="113,5,235,32"/>
+<map id="include/header/linalg.h" name="include/header/linalg.h">
+<area shape="rect" id="node1" title="Main Header file for Linear Algebra Library." alt="" coords="89,5,259,32"/>
 <area shape="rect" id="node2" href="$utils_8h.html" title=" " alt="" coords="317,304,380,331"/>
 <area shape="rect" id="node9" href="$vector_8h.html" title="Header file for Vector class." alt="" coords="66,229,141,256"/>
 <area shape="rect" id="node10" href="$matrix_8h.html" title="Header file for Matrix class." alt="" coords="179,155,257,181"/>

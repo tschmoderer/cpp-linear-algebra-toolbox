@@ -1,5 +1,5 @@
-<map id="include/lsq.h" name="include/lsq.h">
-<area shape="rect" id="node1" title=" " alt="" coords="271,5,375,32"/>
+<map id="include/header/lsq.h" name="include/header/lsq.h">
+<area shape="rect" id="node1" title=" " alt="" coords="246,5,399,32"/>
 <area shape="rect" id="node2" href="$square_matrix_8h.html" title=" " alt="" coords="263,80,383,107"/>
 <area shape="rect" id="node3" href="$matrix_8h.html" title="Header file for Matrix class." alt="" coords="284,155,361,181"/>
 <area shape="rect" id="node4" href="$vector_8h.html" title="Header file for Vector class." alt="" coords="236,229,311,256"/>

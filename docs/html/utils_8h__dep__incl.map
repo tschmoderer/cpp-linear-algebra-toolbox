@@ -1,17 +1,17 @@
-<map id="include/utils.h" name="include/utils.h">
-<area shape="rect" id="node1" title=" " alt="" coords="381,5,494,32"/>
-<area shape="rect" id="node2" href="$utils_8cpp.html" title=" " alt="" coords="177,80,277,107"/>
-<area shape="rect" id="node3" href="$linalg_8h.html" title="Main Header file for Linear Algebra Library." alt="" coords="579,304,701,331"/>
-<area shape="rect" id="node5" href="$lower_triangular_matrix_8h.html" title=" " alt="" coords="5,229,232,256"/>
-<area shape="rect" id="node7" href="$vector_8h.html" title="Header file for Vector class." alt="" coords="497,80,623,107"/>
-<area shape="rect" id="node4" href="$linalg_8cpp.html" title=" " alt="" coords="586,379,694,405"/>
-<area shape="rect" id="node6" href="$lower_triangular_matrix_8cpp.html" title=" " alt="" coords="11,304,226,331"/>
-<area shape="rect" id="node8" href="$vector_8cpp.html" title="Implementation file for Vector class." alt="" coords="504,155,616,181"/>
-<area shape="rect" id="node9" href="$diagonal_matrix_8h.html" title="Header file for Diagonal Matrix type." alt="" coords="691,155,874,181"/>
-<area shape="rect" id="node11" href="$matrix_8h.html" title="Header file for Matrix class." alt="" coords="352,155,480,181"/>
-<area shape="rect" id="node10" href="$diagonal_matrix_8cpp.html" title="Implementation file for Diagonal Matrix class." alt="" coords="691,229,861,256"/>
-<area shape="rect" id="node12" href="$matrix_8cpp.html" title="Implementation of the Matrix class." alt="" coords="501,229,616,256"/>
-<area shape="rect" id="node13" href="$square_matrix_8h.html" title=" " alt="" coords="256,229,427,256"/>
-<area shape="rect" id="node14" href="$square_matrix_8cpp.html" title="Implementation of the SquareMatrix class." alt="" coords="255,304,414,331"/>
-<area shape="rect" id="node15" href="$lsq_8h.html" title=" " alt="" coords="439,304,543,331"/>
+<map id="include/header/utils.h" name="include/header/utils.h">
+<area shape="rect" id="node1" title=" " alt="" coords="377,5,539,32"/>
+<area shape="rect" id="node2" href="$utils_8cpp.html" title=" " alt="" coords="172,80,272,107"/>
+<area shape="rect" id="node3" href="$linalg_8h.html" title="Main Header file for Linear Algebra Library." alt="" coords="613,319,783,345"/>
+<area shape="rect" id="node5" href="$lower_triangular_matrix_8h.html" title=" " alt="" coords="5,229,228,271"/>
+<area shape="rect" id="node7" href="$vector_8h.html" title="Header file for Vector class." alt="" coords="519,80,693,107"/>
+<area shape="rect" id="node4" href="$linalg_8cpp.html" title=" " alt="" coords="644,393,752,420"/>
+<area shape="rect" id="node6" href="$lower_triangular_matrix_8cpp.html" title=" " alt="" coords="9,319,224,345"/>
+<area shape="rect" id="node8" href="$vector_8cpp.html" title=" " alt="" coords="550,155,662,181"/>
+<area shape="rect" id="node9" href="$diagonal_matrix_8h.html" title="Header file for Diagonal Matrix type." alt="" coords="737,155,969,181"/>
+<area shape="rect" id="node11" href="$matrix_8h.html" title="Header file for Matrix class." alt="" coords="348,155,525,181"/>
+<area shape="rect" id="node10" href="$diagonal_matrix_8cpp.html" title=" " alt="" coords="737,237,907,263"/>
+<area shape="rect" id="node12" href="$matrix_8cpp.html" title=" " alt="" coords="547,237,662,263"/>
+<area shape="rect" id="node13" href="$square_matrix_8h.html" title=" " alt="" coords="252,237,472,263"/>
+<area shape="rect" id="node14" href="$square_matrix_8cpp.html" title=" " alt="" coords="251,319,409,345"/>
+<area shape="rect" id="node15" href="$lsq_8h.html" title=" " alt="" coords="433,319,587,345"/>
 </map>

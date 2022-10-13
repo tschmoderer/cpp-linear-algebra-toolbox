@@ -1,13 +1,13 @@
-<map id="include/lowerTriangularMatrix.h" name="include/lowerTriangularMatrix.h">
-<area shape="rect" id="node1" title=" " alt="" coords="160,5,387,32"/>
-<area shape="rect" id="node2" href="$utils_8h.html" title=" " alt="" coords="242,229,305,256"/>
-<area shape="rect" id="node9" href="$matrix_8h.html" title="Header file for Matrix class." alt="" coords="273,80,351,107"/>
-<area shape="rect" id="node3" title=" " alt="" coords="5,304,72,331"/>
-<area shape="rect" id="node4" title=" " alt="" coords="97,304,165,331"/>
-<area shape="rect" id="node5" title=" " alt="" coords="189,304,259,331"/>
-<area shape="rect" id="node6" title=" " alt="" coords="283,304,363,331"/>
-<area shape="rect" id="node7" title=" " alt="" coords="387,304,458,331"/>
-<area shape="rect" id="node8" title=" " alt="" coords="483,304,555,331"/>
-<area shape="rect" id="node10" href="$vector_8h.html" title="Header file for Vector class." alt="" coords="273,155,348,181"/>
-<area shape="rect" id="node11" title=" " alt="" coords="372,155,447,181"/>
+<map id="include/header/lowerTriangularMatrix.h" name="include/header/lowerTriangularMatrix.h">
+<area shape="rect" id="node1" title=" " alt="" coords="162,5,385,47"/>
+<area shape="rect" id="node2" href="$utils_8h.html" title=" " alt="" coords="242,244,305,271"/>
+<area shape="rect" id="node9" href="$matrix_8h.html" title="Header file for Matrix class." alt="" coords="273,95,351,121"/>
+<area shape="rect" id="node3" title=" " alt="" coords="5,319,72,345"/>
+<area shape="rect" id="node4" title=" " alt="" coords="97,319,165,345"/>
+<area shape="rect" id="node5" title=" " alt="" coords="189,319,259,345"/>
+<area shape="rect" id="node6" title=" " alt="" coords="283,319,363,345"/>
+<area shape="rect" id="node7" title=" " alt="" coords="387,319,458,345"/>
+<area shape="rect" id="node8" title=" " alt="" coords="483,319,555,345"/>
+<area shape="rect" id="node10" href="$vector_8h.html" title="Header file for Vector class." alt="" coords="273,169,348,196"/>
+<area shape="rect" id="node11" title=" " alt="" coords="372,169,447,196"/>
 </map>
