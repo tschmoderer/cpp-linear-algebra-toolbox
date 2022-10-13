@@ -7,15 +7,11 @@ import matplotlib.pyplot as plt
 dir_path = os.path.dirname(os.path.realpath(__file__))
 res      = []
 n_max    = 65536
-step     = 100
+step     = 128
 idx      = range(1, n_max, step)
 for n in idx:
     p = subprocess.check_output([str(dir_path)+"/perf_dot_vector", str(n)])
     res.append(int(p))
-
-print(res)
-print(len(res))
-
 
 plt.scatter(idx, res)
 
